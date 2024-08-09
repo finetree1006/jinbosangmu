@@ -62,7 +62,7 @@
                      </td>
                      
                      <td>
-                        <a href='./detail?noticeNo=${CustomerDto.customerNo}'>
+                        <a href='./detail?customerNo=${CustomerDto.customerNo}'>
                            ${CustomerDto.customerQue}
                         </a>       
                      </td>

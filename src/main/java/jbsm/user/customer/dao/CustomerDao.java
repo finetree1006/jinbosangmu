@@ -194,7 +194,7 @@ public class CustomerDao {
 		return result;
 	}
 	
-	// 회원등록
+
 		public int customerInsert(CustomerDto customerDto) throws Exception {
 			int result = 0;
 			PreparedStatement pstmt = null;
