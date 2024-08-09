@@ -39,9 +39,9 @@
 		<section class='inner-intro dark-bg bg-image overlay-dark parallax parallax-background1 overlay-dark70' data-background-img='http://sjd03.godohosting.com/S2.User/img/sub-introduce.jpg'>
 			<div class='container'>
 				<div class='row title'>
-					<h2>공지사항 상세</h2>
+					<h2>공지사항</h2>
 					<span class='sd-1 sd-sm sd-thick-3px sd-center'></span>
-					<div class='page-breadcrumb'><span>여기에 서브페이지의 설명 멘트가 들어 갑니다!</span></div>
+					<div class='page-breadcrumb'><span>진보상무의 공지사항을 확인하세요!</span></div>
 				</div>
 			</div>
 		</section>

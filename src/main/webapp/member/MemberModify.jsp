@@ -47,35 +47,45 @@
 
         <!-- Content Section -->
         <section class="ptb ptb-sm-80">
-            <div class="container" id="div_sub" style='height: 400px'>
+            <div class="container" id="div_sub">
 
 				<h1>회원정보</h1>
-					<form action='./modify' method='post'>
-					   <input type='hidden' name='memberNo' 
-					   value='${memberDto.memberNo}'>
-					    
-					   이름: <input type='text' name='memberName' 
-					   value='${memberDto.memberName}'><br>
-					   
-					   전화번호: <input type='text' name='memberPhone'
-					   value='${memberDto.memberPhone}'><br>
-					   
-					   우편번호: <input type='text' name='memberZip' 
-					   value='${memberDto.memberZip}'><br>
-					   
-					   주소: <input type='text' name='memberAddr1' 
-					   value='${memberDto.memberAddr1}'><br>
-					    
-					   상세주소: <input type='text' name='memberAddr2' 
-					   value='${memberDto.memberAddr2}'><br>
-					    
-					   <input type='submit' value='정보 수정'>
-					   <input type='button' value='삭제' 
-					      onclick='pageMoveDeleteFnc(${memberDto.memberNo})'>
-					   <input type='button' value='취소' onclick='pageMoveListFnc();'>
-					</form>
+			<form action='./modify' method='post'>
+				<input type='hidden' name='memberNo' class='form-control'
+					value='${memberDto.memberNo}'> 
+					
+				<label>이름</label> 
+				<input type='text' name='memberName' class='form-control'
+					value='${memberDto.memberName}'> 
+					
+				<label>전화번호</label>
+				<select name='phoneNum1' id='phoneNum1'
+					class='form-select text-center' style="width: 100px">
+					<option value='010'>010</option>
+					<option value='011'>011</option>					
+				</select> 
+				<input type='text' name='phoneNum2' id='phoneNum2' value=''
+					style='width: 150px;' maxlength="4" class='form-control'> 	
+				<input type='text' name='phoneNum3' id='phoneNum3' value=''
+					style='width: 150px;' maxlength="4" class='form-control'> 
+					
+				<label>우편번호</label>
+				<input type='text' name='memberZip' class='form-control'
+					value='${memberDto.memberZip}'> 
+					
+				<label>주소</label>
+				<input type='text' name='memberAddr1' class='form-control'
+					value='${memberDto.memberAddr1}'>
+					
+				<label>상세주소</label>
+				<input type='text' name='memberAddr2' class='form-control'
+					value='${memberDto.memberAddr2}'>
+					
+				<input type='submit' value='정보 수정' class='btn btn-brown'> 
+				<input type='button' value='취소' onclick='pageMoveListFnc();' class='btn btn-brown'>
+			</form>
 
-            </div>
+		</div>
         </section>
         <!-- End Content Section -->
 

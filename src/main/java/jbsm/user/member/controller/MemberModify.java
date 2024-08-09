@@ -67,10 +67,14 @@ public class MemberModify extends HttpServlet {
 			
 			int memberNo = Integer.parseInt(request.getParameter("memberNo"));
 			String memberName = request.getParameter("memberName");
-			String memberPhone = request.getParameter("memberPhone");
+			String phoneNum1 = request.getParameter("phoneNum1");
+	        String phoneNum2 = request.getParameter("phoneNum2");
+	        String phoneNum3 = request.getParameter("phoneNum3");
 			String memberZip = request.getParameter("memberZip");
 			String memberAddr1 = request.getParameter("memberAddr1");
 			String memberAddr2 = request.getParameter("memberAddr2");
+			
+			String memberPhone = phoneNum1 + "-" + phoneNum2 + "-" + phoneNum3;
 			
 			
 			memberDto = new MemberDto();
@@ -93,7 +97,7 @@ public class MemberModify extends HttpServlet {
 				System.out.println("회원 정보 조회가 실패하였습니다.");
 			}
 			
-			response.sendRedirect("list");
+			response.sendRedirect("./logout");
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

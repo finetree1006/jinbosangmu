@@ -36,9 +36,9 @@
 		<section class='inner-intro dark-bg bg-image overlay-dark parallax parallax-background1 overlay-dark70' data-background-img='http://sjd03.godohosting.com/S2.User/img/sub-introduce.jpg'>
 			<div class='container'>
 				<div class='row title'>
-					<h2>이벤트</h2>
+					<h2>문의하기</h2>
 					<span class='sd-1 sd-sm sd-thick-3px sd-center'></span>
-					<div class='page-breadcrumb'><span>진보상무의 진행중인 이벤트입니다</span></div>
+					<div class='page-breadcrumb'><span>최대한 빠르게 답변드리겠습니다</span></div>
 				</div>
 			</div>
 		</section>
@@ -54,14 +54,14 @@
 				<br>
 				<input type='hidden' name='customerMno' id='customerMno' value='${sessionScope.memberNo}'>
 				
-				질문: 
+				<div style="font-size: 20px">질문</div>
 				<br>
 				<textarea name='customerQue' id='customerQue'
 				rows="10" cols="100"></textarea> 
 				<br>
 				
-				<input type='submit' value='추가'>
-				<input type='reset' value='취소'>
+				<input type='submit' value='추가' class='btn btn-brown'>
+				<input type='reset' value='취소' class='btn btn-brown'>
 	        </form>	   		    
 
             </div>

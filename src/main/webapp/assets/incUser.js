@@ -128,3 +128,8 @@ function customerNewFnc() {
 function eventAddFnc() {
    location.href = "./new";
 }
+
+
+function eventListFnc() {
+   location.href = "./list";
+}

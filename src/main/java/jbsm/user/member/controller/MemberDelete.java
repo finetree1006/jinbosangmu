@@ -38,7 +38,7 @@ public class MemberDelete extends HttpServlet {
         	 System.out.println("회원 삭제가 정상처리 되지 않았습니다.");
          }
          
-         response.sendRedirect("./list");
+         response.sendRedirect("./logout");
          
          
       } catch (Exception e) {
